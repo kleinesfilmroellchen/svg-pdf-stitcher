@@ -11,6 +11,12 @@ The resulting PDFs are always rasterized, even though SVGs are vector graphics. 
 
 There should be help output with `--help`. Determine the output file with `--out`. Additional arguments are interpreted as SVG source files. They are output to the PDF files in the specified order, and vertically scaled to (approximately, fuck CSS/HTML and SVG scaling) the page size. The paper format is A4 portrait, and while you can change that, good luck adjusting the three inter-dependent variables.
 
+## Known Issues
+
+(why god am I writing this section)
+
+SVG files have the tendency to not appear if you print multiple PDFs with them. This is most likely some Chrome/Chromium cache bullshit (cache interference? MS Edge?) and out of my control. Try opening the source SVG in a browser (Chrome at least) and re-run the script.
+
 ## Final words
 
 I made this in a sleepless night two days before christmas because I needed a method of stitching together the SVG exports from my Microsoft Whiteboard. I needed a PDF for university exercise submissions, and I had MS Whiteboard scribbles because I used a graphic tablet for my exercises (some courses force hand-written solutions) and no other free vector-based drawing program can handle a multi-monitor setup and correct pen input. Krita is unusable because of the lack of dynamic page size/multi-page support. Fuck you, GTK, get this fixed already! Both Inkscape and Xournal++ (my preferred program, if it worked) suffer from this because GTK is too stupid to just accept Windows Ink input and MAP IT TO THE SCREEN THAT WINDOWS TELLS IT THAT IT BELONGS TO, INSTEAD OF THE ENTIRE MONITOR SPACE. You suck, GTK.
