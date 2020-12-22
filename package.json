@@ -1,0 +1,31 @@
+{
+  "name": "svg-pdf-stitcher",
+  "version": "1.0.0",
+  "description": "Puppeteer-based script to stitch together SVG files into nice PDFs",
+  "main": "main.mjs",
+  "scripts": {
+    "main": "node main.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleinesfilmroellchen/svg-pdf-stitcher.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "pdf",
+    "svg",
+    "convert",
+    "conversion",
+    "converter"
+  ],
+  "author": "kleines filmröllchen",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/kleinesfilmroellchen/svg-pdf-stitcher/issues"
+  },
+  "homepage": "https://github.com/kleinesfilmroellchen/svg-pdf-stitcher#readme",
+  "dependencies": {
+    "puppeteer": "^5.5.0",
+    "yargs": "^16.2.0"
+  }
+}
