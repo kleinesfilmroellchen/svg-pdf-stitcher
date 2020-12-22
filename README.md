@@ -3,9 +3,9 @@ Puppeteer-based script to stitch together SVG files into nice PDFs.
 
 This is a node thing, because it depends on Puppeteer to use headless Chromium for rendering and PDF export. Yes, I hate JavaScript as well, yes, NodeJS is a bad idea. This is the only way to do it.
 
-Technically, this script supports all types of images a normal browser can display. I haven't tried non-SVG, however
+Technically, this script supports all types of images a normal browser can display. I haven't tried non-SVG, however.
 
-The resulting PDFs are always rasterized, even though SVGs are vector graphics. There is no way around this; PDF exports on LibreOffice draw with imported SVGs yield similar results. As opposed to other methods, however, SVG glitches are unlikely to occur because an actual browser is used to render them.
+The resulting PDFs are always rasterized, even though SVGs are vector graphics. There is no way around this; PDF exports on LibreOffice Draw with imported SVGs yield similar results. As opposed to other methods, however, SVG glitches are unlikely to occur because an actual browser is used to render them.
 
 ## Command line arguments and functionality
 

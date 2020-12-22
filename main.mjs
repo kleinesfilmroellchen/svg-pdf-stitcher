@@ -31,21 +31,20 @@ if (maybeError) {
 	process.exit(1);
 }
 
+// main program
 (async () => {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
 
 	// for safety, make the viewport ratio A4 as well
 	await page.setViewport({
-		width: 2970,
-		height: 2100
+		height: 2970,
+		width: 2100
 	});
 
 	// navigate to wrapper
 	await page.goto(`file://${path.resolve('./wrapper.html')}`);
 	const container = await page.$('div#container');
-
-	console.log(await page.content());
 
 	// place all images
 	await Promise.all(inputs.map(async input => {
@@ -61,12 +60,13 @@ if (maybeError) {
 		// console.log(retval);
 		// console.log(await page.content());
 	}));
-	
+
 	console.log('  printing pdf...');
 	await page.pdf({
 		path: output,
 		format: 'A4',
 	});
-	
+
+	console.log(`success, your pdf is in ${output}`);
 	await browser.close();
 })();
